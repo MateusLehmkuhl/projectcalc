@@ -89,5 +89,5 @@ public class Operacoes {
 
 	private double mod() {
 		return num1%num2;
-	}		
+	}	
 }

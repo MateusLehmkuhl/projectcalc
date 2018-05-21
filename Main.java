@@ -9,12 +9,15 @@ public class Main {
 	public static void main(String[] args) throws IOException{
 		Operacoes calc = new Operacoes();
 
-		for(int i=0;i<4;i++) {
+		while(true) {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			System.out.print("Digite a expressao: ");
 			String s = br.readLine();
-
+			if(s.equals(".")) {
+				break;
+			}
 			System.out.println("Resultado: "+calc.calcula(s));
 		}
+		System.out.println("Finalizado");
 	}
 }
